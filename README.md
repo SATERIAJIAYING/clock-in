@@ -21,21 +21,21 @@ Edge：https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
 在脚本的代码中，填写浏览器是Edge还是Chrome。
 
 ```
-browser = '**Edge**'
+browser = 'Edge'
 ```
 
 把以下函数的参数改成Webdriver驱动程序的绝对路径。
 
 ```
-service = Service(executable_path=r'**D:\edgedriver_win64\msedgedriver.exe**')
+service = Service(executable_path=r'D:\edgedriver_win64\msedgedriver.exe')
 ```
 
 分别填写一卡通号，一卡通密码和申报的体温。**可以填写多份一卡通及密码，以同时为多人打卡**。
 
 ```
-userid = **['一卡通号1', '一卡通号2', '一卡通号3']**
-password = **['密码1', '密码2', '密码3']**
-temp = **'36.7'**
+userid = ['一卡通号1', '一卡通号2', '一卡通号3']
+password = ['密码1', '密码2', '密码3']
+temp = '36.7'
 ```
 
 若要显示浏览器界面需注释以下语句。
