@@ -8,6 +8,10 @@
 
 需要导入的python库：time、selenium
 
+```
+pip install selenium
+```
+
 根据**浏览器的种类以及版本号**下载对应的Webdriver驱动程序。
 
 Chrome：http://chromedriver.storage.googleapis.com/index.html
