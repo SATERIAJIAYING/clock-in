@@ -1,4 +1,4 @@
-# 自动健康申报小程序
+# 自动健康申报脚本
 
 基于selenium编写的东南大学全校师生每日健康申报自动化脚本，解决车友们因忘记申报而无权限卡的痛点。
 只需要配置好驱动和python库，简单填写一卡通号即可使用，容易上手！
@@ -29,8 +29,8 @@ service = Service(executable_path=r'D:\edgedriver_win64\msedgedriver.exe')
 分别填写一卡通号，一卡通密码和申报的体温。**可以填写多份一卡通及密码，以同时为多人打卡**。
 
 ```
-userid = ['一卡通号1', '一卡通号2']
-password = ['密码1', '密码2']
+userid = ['一卡通号1', '一卡通号2', '一卡通号3']
+password = ['密码1', '密码2', '密码3']
 temp = '36.7'
 ```
 
@@ -57,10 +57,11 @@ option.add_argument("--headless")
 **添加参数**填写脚本（.py文件）绝对路径，**起始于**填写脚本的目录，例如：
 
 ···
+程序或脚本：C:\Users\86177\AppData\Local\Programs\Python\Python39\python.exe
 添加参数：D:\Desktop\CODE\py\打卡\daka.py
 起始于：D:\Desktop\CODE\py\打卡
 ···
 
 之后一路点确定并且输入系统账户密码即可设置完成。
 
-PS：SEU-WLAN无论是否选择动态登录，连接一段时间都会要求重新认证，所以大家在使用该脚本时也要留意每日是否成功打卡。推荐结合Python SMTP邮件的方式通知打卡结果。
+PS：SEU-WLAN无论是否选择无感登录，连接一段时间都会要求重新认证，所以大家在使用该脚本时也要留意每日是否成功打卡。推荐结合Python SMTP邮件的方式通知打卡结果。
