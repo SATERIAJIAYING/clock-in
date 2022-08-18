@@ -60,11 +60,11 @@ option.add_argument("--headless")
 
 **添加参数**填写脚本（.py文件）绝对路径，**起始于**填写脚本的目录，例如：
 
-···
+```
 程序或脚本：C:\Users\86177\AppData\Local\Programs\Python\Python39\python.exe
 添加参数：D:\Desktop\CODE\py\打卡\daka.py
 起始于：D:\Desktop\CODE\py\打卡
-···
+```
 
 之后一路点确定并且输入系统账户密码即可设置完成。
 
