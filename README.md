@@ -18,7 +18,7 @@ Chrome：http://chromedriver.storage.googleapis.com/index.html
 
 Edge：https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
 
-代码中需要填写相关信息的地方已经用TODO高亮注释。
+**代码中需要填写相关信息的地方已经用TODO高亮注释。**
 
 填写浏览器是Edge还是Chrome。
 
