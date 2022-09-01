@@ -1,4 +1,4 @@
-# encoding:utf-8
+# coding:utf-8
 def main():
     import time
     from time import sleep
@@ -56,6 +56,8 @@ def main():
                 .key_down(Keys.TAB)\
                 .send_keys(password[num])\
                 .perform()
+
+            sleep(3)
 
             driver.find_element(By.XPATH, '//*[@id="xsfw"]').click()
             driver.implicitly_wait(10)
