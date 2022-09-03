@@ -32,7 +32,7 @@ def main():
         option = webdriver.ChromeOptions()
 
     # 若要显示浏览器界面需注释以下语句
-    option.add_argument("--headless")
+    # option.add_argument("--headless")
 
     for numUser in range(len(userid)):
         for numTry in range(3):
