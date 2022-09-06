@@ -3,10 +3,11 @@ def main():
     import time
     from time import sleep
 
-    # TODO: 一卡通号  密码  体温
+    # TODO: 一卡通号  密码  体温  尝试次数
     userid = ['一卡通号1', '一卡通号2', '一卡通号3']
     password = ['密码1', '密码2', '密码3']
     temp = '36.7'
+    times = 3
 
     # TODO: 浏览器类型
     browser = 'Edge'
@@ -35,7 +36,7 @@ def main():
     # option.add_argument("--headless")
 
     for numUser in range(len(userid)):
-        for numTry in range(3):
+        for numTry in range(times):
             step = 0
             driver = 0
             try:
